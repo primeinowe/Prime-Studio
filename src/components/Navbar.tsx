@@ -10,7 +10,7 @@ import { translations } from "@/lib/i18n"
 export default function Navbar() {
   const [cartOpen, setCartOpen] = useState(false)
 
-  const { locale, toggleLocale } = useLocale()
+  const { locale } = useLocale()
   const t = translations[locale]
 
   return (
