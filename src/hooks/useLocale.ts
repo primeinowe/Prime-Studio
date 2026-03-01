@@ -16,5 +16,12 @@ export function useLocale() {
     }
   }, [])
 
-  return { locale, setLocale }
+  const toggleLocale = () => {
+    setLocale(prev => (prev === "pt" ? "en" : "pt"))
+  }
+
+  return {
+    locale,
+    toggleLocale
+  }
 }
